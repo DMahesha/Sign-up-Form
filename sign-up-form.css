@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#left-half {
+    background-color: lightcoral;
+    width:20%;
+    height: 100svh;
+    display: flex;
+}
+
+#logo {
+    background-color: darkred;
+    margin-top: 25svh;
+    width: 100%;
+    height: 150px;
+}
+
+#right-half {
+    background-color: lightblue;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro {
+    background-color: lightcyan;
+    margin-top: 20svh;
+    width: 100%;
+    height: 100px;
+}
+
+#signup {
+    background-color: lightgoldenrodyellow;
+    margin-top: 5svh;
+    width: 100%;
+    height: 250px;
+}
+
+#login {
+    background-color: lightpink;
+    margin-top: 5svh;
+    width: 100%;
+    height: 100px;
+}
