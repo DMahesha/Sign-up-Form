@@ -13,30 +13,48 @@ body {
 }
 
 #left-half {
-    background-color: rgb(216, 6, 33);
-    width:30%;
+    /* background-color: black; */
+    width:50%;
     height: 100svh;
-    display: flex;
+    /* border: solid 1px green; */
 }
 
-#logo {
+#cat {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: solid 1px red */
+}
+
+#img-source {
+    position: absolute;
+    align-self: center;
+    z-index: 1;
+    left:30%;
+    bottom: 0px;
+    color:white;
+    font-size:medium;
+    /* border: solid 1px blue */
+}
+
+/* #logo {
     background-color: rgb(253, 253, 253);
     margin-top: 25svh;
     width: 100%;
     height: 150px;
     opacity: 50%;
-}
+} */
 
 #right-half {
-    background-color: white;
-    width:40%;
+    background-color: lightgray;
+    width:30%;
     display: flex;
     flex-direction: column;
 }
 
 #intro {
     /* background-color: lightcyan; */
-    margin-top: 15svh;
+    margin-top: 20svh;
     width: 100%;
     height: 100px;
 }
@@ -44,16 +62,18 @@ body {
 #intro-1, #intro-2, #insp {
     margin-left: 20px;
     margin-right: 20px;
-    color: rgb(216, 6, 33);
+    color: black;
 }
 
 #signup {
-    background-color: rgb(221, 221, 221);
-    margin-top:7svh;
+    /* background-color: rgb(221, 221, 221); */
+    margin-top:5svh;
     width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
+    /* background-color: rgb(194, 194, 194);
+    box-shadow: 0px 0px 8px rgb(77, 77, 77); */
     /* border: red 1px solid; */
 }
 
@@ -77,22 +97,26 @@ body {
 
 #user-first-name, #user-last-name, #user-email, #user-phone-number, #user-password, #user-confirm-password {
     padding: 10px;
-    border-radius: 10px;
-    border: 0;
+    border-radius: 5px;
+    border: solid 1px black;
     width: 80%;
     font-size: 70%;
 }
 
+.input:focus {
+    border: solid 1px blue;
+}
+
 #login {
     /*background-color: lightpink;*/
-    margin-top: 5svh;
+    margin-top: 0.5svh;
     width: 100%;
     height: 100px;
 }
 
 #create-account {
     margin-left: 20px;
-    background-color: rgb(216, 6, 33);
+    background-color: black;
     color: white;
     padding: 15px;
     padding-left: 30px;
@@ -103,6 +127,10 @@ body {
     border-radius: 10px;
 }
 
+#create-account:hover {
+    cursor: pointer;
+}
+
 #already-own-account {
     margin-left: 20px;
     margin-right: 20px;
@@ -110,6 +138,10 @@ body {
 }
 
 #already-own-account-login {
-    color: rgb(216, 6, 33);
+    color: black;
     text-decoration: underline;
+}
+
+#already-own-account-login:hover {
+    cursor: pointer;
 }
